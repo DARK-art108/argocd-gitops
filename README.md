@@ -34,3 +34,14 @@ This is a simple guide to setup ArgoCD on a local K8s cluster.
 - [ArgoCD](https://argoproj.github.io/argo-cd/)
 - [ArgoCD on Minikube](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
 - [ArgoCD on Docker Desktop](https://argoproj.github.io/argo-cd/getting_started/#2-create-an-application)
+
+
+
+
+
+argocd app create guestbook 
+--repo https://github.com/argoproj/argocd-example-apps.git 
+--path guestbook 
+--dest-server 
+https://kubernetes.default.svc 
+--dest-namespace default
